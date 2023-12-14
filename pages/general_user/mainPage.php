@@ -13,7 +13,7 @@ include 'main.php';
     <title>UserHome</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="icon" href="assets/img/Logo.png">
+    <link rel="icon" href="../../assets/img/logo1.png">
     <style>
         body {
             font-family: "Dosis";
@@ -29,11 +29,11 @@ include 'main.php';
 <body>
 
 <div>
-    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm p-3 bg-white">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm bg-white" style="padding-top: 0; padding-bottom: 0;">
             <div class="container-fluid">
 
-                <a class="navbar-brand logo" href="#">
-                    <img src="img/logo.png" alt="" width="100">
+                <a class="navbar-brand logo" href="#" style="padding-top: 0; padding-bottom: 0;">
+                    <img src="../../assets/img/logo1.png" alt=""style="width: 70px; height: 70px;">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,14 +80,14 @@ include 'main.php';
     
 <div class="container-fluid main-body">
 
-    <div class="container-fluid main-body">
+    <div class="container-fluid">
 
-        <div class="row mbody">
+        <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-one">
-                <h2 class="t1">UIU  Service Hub</h2>
-                <h5 class="t2">Some Important Service Provide By a Single Platform </h5>
-                <p class="onep">In this project, we are developing a System based on the services that UIU provides for the students. It will reduce the problem to get these services that our university provides by combining them in a single platform. The services include Hostel Service, Suttle Service Registration, Student Loans, Club Forum Discussion, and Posts.</p>
-                <button onclick="location.href='#next';" class="btn btn-warning cus-b3">Get Started</button>
+                <h2 class="t1">UIU Club Fourm</h2>
+                <!-- <h5 class="t2">Some Important Service Provide By a Single Platform </h5> -->
+                <p class="onep">In the dynamic and diverse environment of a university, student clubs and organizations play a pivotal role in enhancing the overall educational experience. These clubs serve as platforms for students to pursue their interests, develop leadership skills, and connect with like-minded peers. The "UIU Forum" is an innovative project designed to streamline and enhance the management of university clubs, offering a comprehensive suite of features including chat, joining fees, organizing events, and post creation .</p>
+                <!-- <button onclick="location.href='#next';" class="btn btn-warning cus-b3">Get Started</button> -->
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-two">
                 <img class="img-3 d-none d-lg-block " src="../../img/3.png" alt="img">

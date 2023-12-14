@@ -4,6 +4,8 @@
     padding: 7% !important;
     padding-top: 10% !important;
 }
+
+
 .custom2{
     width: 160px !important;
     height: 160px !important;
@@ -68,6 +70,7 @@
     background-color: rgb(220, 140, 35) !important;
     border-color: rgb(220, 140, 35) !important;
 }
+
 .nav-item{
     margin-left: 7px;
     margin-right: 7px;

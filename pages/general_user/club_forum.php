@@ -13,7 +13,7 @@ include 'room.php';
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shuttle Service</title>
+    <title>Club Forum</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/shuttle.css">
 
@@ -21,7 +21,7 @@ include 'room.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="assets/img/Logo.png">
+    <link rel="icon" href="../../assets/img/logo1.png">
 
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -75,10 +75,10 @@ include 'room.php';
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm p-3 bg-white">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm bg-white" style="padding-top: 0; padding-bottom: 0;">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="#">
-                <img src="img/logo.png" alt="" width="100">
+            <a class="navbar-brand logo" href="#" style="padding-top: 0; padding-bottom: 0;">
+                <img src="../../assets/img/logo1.png" alt=""style="width: 70px; height: 70px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

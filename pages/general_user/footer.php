@@ -63,11 +63,10 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            UIU SERVICE HUB
+                            UIU Club Fourm
                         </h6>
                         <p>
-                            UIU SERVICE HUB is a non-profitable organization to help the students of United International University.
-                            For any query contact with us from provided contact methods.
+                            In the dynamic and diverse environment of a university, student clubs and organizations play a pivotal role in enhancing the overall educational experience. These clubs serve as platforms for students to pursue their interests, develop leadership skills, and connect with like-minded peers. The "UIU Forum" is an innovative project designed to streamline and enhance the management of university clubs, offering a comprehensive suite of features including chat, joining fees, organizing events, and post creation .
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -88,7 +87,7 @@
                         <p><i class="fas fa-home me-3 text-secondary"></i> United City, Madani Avenue, Badda, Dhaka</p>
                         <p>
                             <i class="fas fa-envelope me-3 text-secondary"></i>
-                            uiuservicehub@gmail.com
+                            uiuclubfourm@gmail.com
                         </p>
                         <p><i class="fas fa-phone me-3 text-secondary"></i> 01571337468</p>
 
@@ -103,7 +102,7 @@
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2023 Copyright:
-            <a class="text-reset fw-bold" href="#">UIUSERVICEHUB.COM</a>
+            <a class="text-reset fw-bold" href="#">UIUCLUBFOURM.COM</a>
         </div>
         <!-- Copyright -->
     </footer>

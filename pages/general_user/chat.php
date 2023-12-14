@@ -32,16 +32,17 @@ $sec = "10";
     <title>Chat</title>
     <!-- <link rel="icon" href="assets/img/favicon.png"> -->
     <link rel="stylesheet" href="assets\css\chat.css">
+    <link rel="icon" href="../../assets/img/logo1.png">
 </head>
 
 <body>
     <nav class="d-flex justify-content-between align-items-center">
         <!-- <img src="../../assets/img/ForOrangeBg.png" alt="logo" class="img-fluid pt-1 pb-1"> -->
         <div class="d-flex justify-content-center align-items-end">
-            <a href="../../index.php" class="btn btn-uiu text-uppercase mb-1">Home</a>
+            <a href="mainPage.php" class="btn btn-uiu text-uppercase mb-1">Home</a>
             <div class="d-flex flex-column justify-content-center align-items-center p-1">
                 <!-- <p class="m-0 text-uppercase mb-1 p-1 fw-bold   " style="border: 1px solid white; border-radius:10px ;"><?php echo show($_SESSION["id"]); ?></p> -->
-                <a href="../login/logout.php" class="btn btn-uiu text-uppercase">logout</a>
+                <a href="../../index.php" class="btn btn-uiu text-uppercase">logout</a>
             </div>
         </div>
     </nav>
@@ -51,7 +52,7 @@ $sec = "10";
         $check_row = mysqli_fetch_assoc($check_query);
         if($check_row["active"] == 0){
             echo "<script>alert('This room is not active anymore. You will be redirected to the home page.')</script>";
-            header("refresh:0.5; url=../../index.php");
+            header("refresh:0.5; url=mainPage.php");
         }
 
         else

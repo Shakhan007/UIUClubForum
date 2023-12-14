@@ -7,5 +7,5 @@
     $query = "update users set approve=1 where room_id={$room_id} and users_id={$user_id}";
     mysqli_query($sql, $query);
 
-    header("Location: ../../../index.php");
+    header("Location: ../add_user.php");
 ?>

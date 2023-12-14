@@ -1,98 +1,93 @@
 <?php
-include "pages/login/login.php";
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>UIU Service Hub</title>
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="icon" href="assets/img/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="pages/general_user/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="icon" href="assets/img/logo1.png">
+    <style>
+        body {
+            font-family: "Dosis";
+        }
+    </style>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+
+
+
 </head>
 
 <body>
-    <main class="container row justify-content-between m-auto mt-5 p-4">
-        <div class="col-5 text-center" >
-         
-            <h1 class="m-0 text-uppercase fw-bold text-center">welcome to</h1> <br>
-            <img src="assets/img/Logo.png" alt="knowledge" class="img-fluid">
-           
-        </div>
-        <div class="col-7 d-flex flex-column align-items-center">
 
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="w-100 needs-validation d-flex flex-column align-items-center" novalidate method="POST">
-                <section class="row w-75 mb-4">
-                    <h1 class="text-uppercase fw-bold m-0 col-8">login</h1>
-                    <div id="admin-radio" class="d-flex col-4 align-items-center justify-content-between">
-                        <input type="checkbox" class="form-check-input m-0" id="admin" value="admin">
-                        <label for="admin" class="form-check-label text-capitalize fw-bold">Login as admin</label>
-                    </div>
-                </section>
+<div>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm bg-white" style="padding-top: 0; padding-bottom: 0;">
+            <div class="container-fluid">
 
-                <div class="form-floating w-75">
-                    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" value="" required>
-                    <label for="email">Email address</label>
-                    <div class="invalid-feedback">
-                        Please provide a valid email address
-                    </div>
+                <a class="navbar-brand logo" href="#" style="padding-top: 0; padding-bottom: 0;">
+                    <img src="assets/img/logo1.png" alt=""style="width: 70px; height: 70px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="singin.php"><i class="fa-solid fa-house-user"></i> Sing In</a>
+                        </li>
+                       
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="post.php"><i class="fa-solid fa-file"></i> Post </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="club_forum.php"><i class="fa-solid fa-people-group"></i> Club/Forum</a>
+                        </li> -->
+                       
+                        
+                    </ul>
+
                 </div>
-
-                <div class="form-floating w-75">
-                    <input type="password" name="password" class="form-control" id="password" placeholder="*******" value="" required>
-                    <label for="password">Password</label>
-                </div>
-
-                <section class="d-flex flex-column align-items-center" id="type-section">
-                    <p class="m-1 fw-bold">Log in as Forum Representitive ?</p>
-                    <div class="w-75">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="type" id="forum" required value="forumRep">
-                            <label class="form-check-label" for="forum">
-                                Yes
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="type" id="general" required value="general_user">
-                            <label class="form-check-label" for="general">
-                                No
-                            </label>
-                            <div class="invalid-feedback" style="color: red !important;">
-                                Choose first
-                            </div>
-                        </div>
-
-
-                    </div>
-                </section>
-
-                <button class="btn" type="submit">Login</button>
-
-                <?php
-                if ($login_err == 1) {
-                    echo "<div class='text-capitalize fw-bold'>email or password incorrect</div>";
-                }
-                ?>
-            </form>
-
-            <div class="w-100 d-flex align-items-center">
-                <div class="dropdown-divider w-75"></div>
-                <h5 class="text-uppercase m-0 fw-bold">or</h5>
-                <div class="dropdown-divider w-75"></div>
             </div>
+    </nav>
+</div>
+    
+<div class="container-fluid main-body">
 
-            <h5 class="mt-4 fw-bold">Are you new? <a href="pages/login/signup.php" class="ml-1">Create new account</a></h5>
-            <h5 class="mt-4 fw-bold">Forgate Your PassWord? <a href="smtp\recover_psw.php" class="ml-1">Click Here</a></h5>
+    <div class="container-fluid " style="padding: 0;">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-one">
+                <h2 class="t1">UIU Club Forum</h2>
+                <!-- <h5 class="t2">Some Important Service Provide By a Single Platform </h5> -->
+                <p class="onep">In the dynamic and diverse environment of a university, student clubs and organizations play a pivotal role in enhancing the 
+                overall educational experience. These clubs serve as platforms for students to pursue their interests, develop leadership skills, and connect
+                 with like-minded peers. The "UIU Club Forum" is an innovative project designed to streamline and enhance the management of university clubs, 
+                 offering a comprehensive suite of features including chat, joining fees, organizing events, and post creation . </p>
+                <!-- <button onclick="location.href='#next';" class="btn btn-warning cus-b3">Get Started</button> -->
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-two">
+                <img class="img-3 d-none d-lg-block " src="img/3.png" alt="img">
+            </div>
         </div>
-          
-    </main>
+ 
+    </div>
+</div>
+
+
+    <?php include 'pages/general_user/footer.php'?>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/login_validation.js"></script>
-    <script src="assets/js/app.js"></script>
-
+    <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/app.js"></script> -->
 </body>
 
 </html>

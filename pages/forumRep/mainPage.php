@@ -34,7 +34,7 @@ while ($row = $result1->fetch_assoc()) {
         <link rel="stylesheet" href="../general_user/css/styles.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="icon" href="../general_user/assets/img/Logo.png">
+        <link rel="icon" href="../../assets/img/logo1.png">
         <style>
         body {
             font-family: "Dosis";

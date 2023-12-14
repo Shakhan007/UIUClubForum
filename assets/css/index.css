@@ -28,14 +28,14 @@ main{
 
 main .col-5{
     padding: 10rem 0rem;
-   
+    
 }
+
 main .col-5 h1{
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 2rem;
-
 }
 .w-75{
     width: 75% !important;

@@ -19,12 +19,12 @@ include "create.php";
         <div class="card">
             <h3 class="fw-bold pb-1">Account Created</h3>
 
-            <a href="../../index.php" class="ml-1">Log in now</a>
+            <a href="../../singin.php" class="ml-1">Log in now</a>
         </div>
     </section>
 
     <main class="container row m-auto justify-content-center p-4 ">
-        <h1 class="col-12 text-center text-uppercase pb-3 fw-bold">welcome to uiu Service Hub</h1>
+        <h1 class="col-12 text-center text-uppercase pb-3 fw-bold">welcome to uiu club forum</h1>
 
         <form class="col-5 d-flex flex-column align-items-center needs-validation" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" novalidate>
 
@@ -111,7 +111,7 @@ include "create.php";
             <button class="btn" type="submit" >Create Account</button>
         </form>
 
-        <h5 class="mt-4 fw-bold col-10 text-center">Already have an account? <a href="../../index.php" class="ml-1">Log in here</a></h5>
+        <h5 class="mt-4 fw-bold col-10 text-center">Already have an account? <a href="../../singin.php" class="ml-1">Log in here</a></h5>
     </main>
 
 

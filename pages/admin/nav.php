@@ -16,6 +16,7 @@ include '../general_user/main.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../../assets/img/logo1.png">
     <style>
     svg {
         display: block;
@@ -37,7 +38,7 @@ include '../general_user/main.php';
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <img src="../general_user/assets/img/Logo.png" alt="" style="width:266px;">
+                            <img src="../../assets/img/logo1.png" alt="" style="width: 100px; height: 100px; margin: 4% 0 0 60%;">
                         </span>
                         <!-- <span class="title">Brand Name</span> -->
                     </a>
@@ -88,33 +89,7 @@ include '../general_user/main.php';
                     </a>
                 </li>
 
-                <li>
-                    <a href="loan.php">
-                        <span class="icon">
-                            <ion-icon name="cash-outline"></ion-icon>
-                        </span>
-                        <span class="title">Loan Control</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="add_shuttle.php">
-                        <span class="icon">
-                            <ion-icon name="bus"></ion-icon>
-                        </span>
-                        <span class="title">Add Shuttle </span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="add_hostel_room.php">
-                        <span class="icon">
-                            <ion-icon name="bed-outline"></ion-icon>
-                        </span>
-                        <span class="title">Add Hostel Room</span>
-                    </a>
-
-                </li>
+                
 
                 <li>
                     <a href="../login/logout.php">

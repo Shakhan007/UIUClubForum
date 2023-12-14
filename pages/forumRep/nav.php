@@ -18,6 +18,7 @@ include '../general_user/main.php';
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="icon" href="../../assets/img/logo1.png">
 
 </head>
 <body>
@@ -28,7 +29,7 @@ include '../general_user/main.php';
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <img src="../general_user/assets/img/Logo.png" alt="" style = "width:266px;" >
+                            <img src="../../assets/img/logo1.png" alt="" style="width: 100px; height: 100px; margin: 4% 0 0 60%;" >
                         </span>
                         <!-- <span class="title">Brand Name</span> -->
                     </a>

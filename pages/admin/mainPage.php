@@ -25,14 +25,14 @@ include '../general_user/main.php';
         <!-- ========================= Main ==================== -->
         <div class="main">
             <div class="topbar">
-                <div class="search">
+                <!-- <div class="search">
                     <label>
                         <input type="text" placeholder="Search here">
                         <ion-icon name="search-outline"></ion-icon>
                     </label>
-                </div>
+                </div> -->
 
-                <div class="user">
+                <div class="user"  style="margin: 0 0 0 96%;">
                   <img src="assets/imgs/customer01.jpg" alt="">
                 </div>
             </div>
@@ -65,31 +65,7 @@ include '../general_user/main.php';
                 </div>
 
 
-                <?php
-
-                    $r1 = "SELECT COUNT(*) AS total_loan FROM `loan_application`";
-                    $result1 = $sql->query($r1);
-
-                    if ($result1->num_rows > 0) {
-                        $row1 = $result1->fetch_assoc();
-                        $total_loanReq = $row1["total_loan"];
-                    } else {
-                        $total_loanReq = "No Req found.";
-                    }
-
-
-                ?>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers"><?php echo "$total_loanReq"?></div>
-                        <div class="cardName">Total loan request</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <iconify-icon icon="game-icons:cash"></iconify-icon>
-                    </div>
-                </div>
+                
 
                 <?php
 
@@ -116,103 +92,13 @@ include '../general_user/main.php';
                     </div>
                 </div>
 
-                <?php
-
-                    $r3 = "SELECT sum(amount) AS shuttle_payment FROM `shuttle_payment`";
-                    $result3 = $sql->query($r3);
-
-                    if ($result3->num_rows > 0) {
-                        $row3 = $result3->fetch_assoc();
-                        $shuttle_payment = $row3["shuttle_payment"];
-                    } else {
-                        $shuttle_payment = "No Req found.";
-                    }
-
-                    $r4 = "SELECT sum(amount) AS hostel_payment FROM `hostel_payment`";
-                    $result4 = $sql->query($r4);
-
-                    if ($result4->num_rows > 0) {
-                        $row4 = $result4->fetch_assoc();
-                        $hostel_payment = $row4["hostel_payment"];
-                    } else {
-                        $hostel_payment = "No Req found.";
-                    }
-
-                    $total_payment = $shuttle_payment + $hostel_payment;
-                ?>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers"><?php echo $total_payment." ৳"?></div>
-                        <div class="cardName">Total Amount Payment</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="cash-outline"></ion-icon>
-                    </div>
-                </div>
+                
             </div>
 
-            <!-- ================ Loan Request Details List ================= -->
-            <div class="details">
-                <!-- <div class="recentOrders">
-                    <div class="cardHeader">
-                        <h2>Recent Request For Loan</h2>
-                        
-                    </div>
-
-                    <?php 
-                     // include 'request_loan.php';
-                     ?>
-
-                </div> -->
-            </div>
+            
 
 
-            <!-- ================ Shuttle Request Details List ================= -->
-            <div class="details">
-                <div class="recentOrders">
-                    <div class="cardHeader">
-                        <h2>Requested Shuttle Service</h2>
-                        <!-- <a href="#" class="btn">View All</a> -->
-                    </div>
-
-                    <?php 
-                      include 'request_shuttle.php';
-                     ?>
-                </div>
-            </div>
-
-
-            <!-- ================ add Shuttle List ================= -->
-            <div class="details">
-                <div class="recentOrders">
-                    <div class="cardHeader">
-                        <h2>Shuttle List</h2>
-                        <!-- <a href="#" class="btn">View All</a> -->
-                    </div>
-
-                    <?php 
-                      include 'shuttle_list.php';
-                     ?>
-                </div>
-            </div>
-
-
-
-            <!-- ================ New Hostel  Details List ================= -->
-            <div class="details">
-                <div class="recentOrders">
-                    <div class="cardHeader">
-                        <h2>Hostel List</h2>
-                        <!-- <a href="#" class="btn">View All</a> -->
-                    </div>
-
-                    <?php 
-                      include 'newhostel.php';
-                     ?>
-                </div>
-            </div>
+            
 
             
         </div>
