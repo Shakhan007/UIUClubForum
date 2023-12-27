@@ -76,7 +76,7 @@ if($_SESSION['type']=='general_user')
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item" href="profile.php"><i class="fa-solid fa-user"></i> My Profile</a></li>
                                     <li><a class="dropdown-item" onclick="cpass('<?php echo $_SESSION['email']?>', '<?php echo $pass; ?>')"><i class="fa-solid fa-key"></i> Change Password</a></li>
-                                    <li><a class="dropdown-item" href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                                    <li><a class="dropdown-item" href="../login/logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -93,7 +93,7 @@ if($_SESSION['type']=='general_user')
             <div class="col-lg-12 col-one">
                 <div class="shadow-sm p-3 mb-5 bg-white rounded">
                         <div class="card-header py-3">
-                            <h4 class="m-0 font-weight-bold fw-bold text-dark">Posts</h4>
+                            <h4 class="m-0 font-weight-bold fw-bold text-dark" style="font-size: 2em;">Posts</h4>
                         </div>
                         <div>
                         <?php
@@ -121,10 +121,10 @@ if($_SESSION['type']=='general_user')
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Id</th>
-                                            <th>Title</th>
-                                            <th>Category</th>
-                                            <th>Action</th>
+                                            <th style="font-size: 1.5em;">Id</th>
+                                            <th style="font-size: 1.5em;">Title</th>
+                                            <th style="font-size: 1.5em;">Category</th>
+                                            <th style="font-size: 1.5em;">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -140,9 +140,9 @@ if($_SESSION['type']=='general_user')
 
                                         ?>
                                                 <tr>
-                                                    <td><?php echo $id; ?></td>
-                                                    <td><?php echo $post_row['title']; ?></td>
-                                                    <td><?php
+                                                    <td style="font-size: 1.2em;"><?php echo $id; ?></td>
+                                                    <td style="font-size: 1.2em;"><?php echo $post_row['title']; ?></td>
+                                                    <td style="font-size: 1.2em;"><?php
 
                                                         $show_category = mysqli_query($sql, "SELECT * FROM categories WHERE id='{$post_row["cat_id"]}'");
                                                         if (mysqli_num_rows($show_category) > 0) {
@@ -151,7 +151,7 @@ if($_SESSION['type']=='general_user')
                                                         }
 
                                                         ?></td>
-                                                    <td>
+                                                    <td style="font-size: 1.2em;">
                                                         <a href="edit_post.php?id=<?php echo $post_row['id']; ?>" class="btn btn-primary" title="Edit"><i class="fas fa-edit"></i></a>
                                                         <a href="delete_post.php?id=<?php echo $post_row['id']; ?>" class="btn btn-danger" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                                     </td>

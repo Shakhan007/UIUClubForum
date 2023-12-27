@@ -52,7 +52,7 @@ $sec = "10";
         $check_row = mysqli_fetch_assoc($check_query);
         if($check_row["active"] == 0){
             echo "<script>alert('This room is not active anymore. You will be redirected to the home page.')</script>";
-            header("refresh:0.5; url=mainPage.php");
+            // header("refresh:0.5; url=mainPage.php");
         }
 
         else
@@ -70,7 +70,7 @@ $sec = "10";
                             <p class="text-center m-0"><?php echo "{$c_row["first_name"]} {$c_row["last_name"]}"; ?></p>
                             <?php if ($c_row["users_id"] == $_SESSION["id"]) : ?>
                                 <p class="d-flex justify-content-center align-items-center m-0">
-                                    <a <?php echo "href='delete/deleteMsg.php?sl_no={$c_row["sl_no"]}'"; ?>>
+                                    <a <?php echo "href='deleteMsg.php?sl_no={$c_row["sl_no"]}'"; ?>>
                                         <i class="fa-regular fa-trash-can fa-xl p-1"></i>
                                     </a>
                                 </p>
@@ -81,13 +81,33 @@ $sec = "10";
                 </div>
             </div>
 
-            <form action="send.php" method="post">
-                <div class="input-group flex-nowrap">
-                    <input type="hidden" name="room_id" <?php echo "value='{$_SESSION["room_id"]}'" ?>>
-                    <input type="text" class="form-control" aria-describedby="addon-wrapping" name="msg" required autocomplete="off">
-                    <button type="submit" class="btn btn-uiu">Send</button>
-                </div>
-            </form>
+            <form action="send.php" method="post" id="chatForm">
+    <div class="input-group flex-nowrap">
+        <input type="hidden" name="room_id" <?php echo "value='{$_SESSION["room_id"]}'" ?>>
+        <input type="text" class="form-control" aria-describedby="addon-wrapping" name="msg" required autocomplete="off">
+        <button type="submit" class="btn btn-uiu">Send</button>
+    </div>
+</form>
+
+<script>
+    $(document).ready(function () {
+        $("#chatForm").submit(function (event) {
+            event.preventDefault();
+            var formData = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: formData,
+                success: function () {
+                    // Refresh the page after successful message submission
+                    setTimeout(function () {
+                        location.reload();
+                    });
+                }
+            });
+        });
+    });
+</script>
         </div>
     </main>
 

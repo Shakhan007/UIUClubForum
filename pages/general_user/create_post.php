@@ -74,26 +74,18 @@ include "C_post.php";
                         <li class="nav-item">
                             <div class="dropdown">
                                 <?php if ($gender == "Female") {?>
-                                <img class="dropdown-toggle pro" src="../../img/Female.png" alt="img"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="dropdown-toggle pro" src="../../img/Female.png" alt="img" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <?php } ?>
                                 <?php if ($gender == "Male") { ?>
-                                <img class="dropdown-toggle pro" src="../../img/man.png" alt="img"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="dropdown-toggle pro" src="../../img/man.png" alt="img" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <?php } ?>
                                 <?php if ($gender != "Male" && $gender != "Female") { ?>
-                                <img class="dropdown-toggle pro"
-                                    src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($image); ?>"
-                                    alt="img" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="dropdown-toggle pro" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($image); ?>" alt="img" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <?php } ?>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="profile.php"><i class="fa-solid fa-user"></i> My
-                                            Profile</a></li>
-                                    <li><a class="dropdown-item"
-                                            onclick="cpass('<?php echo $_SESSION['email']?>', '<?php echo $pass; ?>')"><i
-                                                class="fa-solid fa-key"></i> Change Password</a></li>
-                                    <li><a class="dropdown-item" href="logout.php"><i
-                                                class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                                    <li><a class="dropdown-item" href="profile.php"><i class="fa-solid fa-user"></i> My Profile</a></li>
+                                    <li><a class="dropdown-item" onclick="cpass('<?php echo $_SESSION['email']?>', '<?php echo $pass; ?>')"><i class="fa-solid fa-key"></i> Change Password</a></li>
+                                    <li><a class="dropdown-item" href="../login/logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -114,7 +106,7 @@ include "C_post.php";
                 <!-- <button onclick="location.href='#next';" class="btn btn-warning cus-b3">Get Started</button> -->
 
                 <div class="d-flex justify-content-between align-items-center mt-2">
-                    <h2 class="w-100 text-center"> Create Post</h2>
+                    <h2 class="w-100 text-center" style="font-size: 2.2em;"> Create Post</h2>
                 </div>
                 <section class="row mt-3">
                     <div class="col-lg-8 col-12 mx-auto bg-white p-4 shadow">
@@ -122,23 +114,23 @@ include "C_post.php";
                         <form action="../general_user/C_post.php" method="post" enctype="multipart/form-data">
                             <?php echo $msg; ?>
                             <div class="form-group mb-1">
-                                <label for="title">Title</label>
+                                <label for="title" style="font-size: 1.5em;">Title</label>
                                 <input type="text" class="form-control" value="<?php echo $_POST['title']; ?>"
                                     name="title" id="title" required>
                             </div>
                             <div class="form-group mb-1">
-                                <label for="description">Description</label>
+                                <label for="description" style="font-size: 1.5em;">Description</label>
                                 <textarea class="form-control" name="description" rows="5" id="description"
                                     required><?php echo $_POST['description']; ?></textarea>
                             </div>
                             <div class="form-group mb-2">
-                                <label for="img">Image</label>
+                                <label for="img" style="font-size: 1.5em;">Image</label>
                                 <input type="file" accept="image/*" class="form-control" name="img" id="img" required>
                             </div>
 
                             <div class="form-group mb-2">
                                 <select class="form-control" name="category" required>
-                                    <option value="" selected hidden disabled>Select Category</option>
+                                    <option value="" selected hidden disabled style="font-size: 1.5em;">Select Category</option>
                                     <?php
                                     if ($_SESSION['type'] == "forumRep" || $_SESSION['type'] == "admin") {
                                         $r = "SELECT * FROM categories";

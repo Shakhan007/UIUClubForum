@@ -28,7 +28,7 @@ include '../general_user/main.php';
             <h2 class="text-center mt-2 border-bottom-uiu" style = "margin-top: 4.5rem!important;">Join Request</h2>
             <section id="item-container" class="w-50 m-auto mt-4">
                 <?php if (mysqli_num_rows($s_query) == 0) : ?>
-                <section class="d-flex  justify-content-between align-items-center w-100 mb-2 border-bottom-uiu pb-2" style = "    margin-left: 9.5rem!important;"id="item">
+                <section class="d-flex  justify-content-between align-items-center w-100 mb-2 border-bottom-uiu pb-2" style = "margin-left: 9.5rem!important;"id="item">
                     <p class="m-0">No Join Requests yet</p>
                 </section>
                 <?php else : ?>
@@ -36,14 +36,14 @@ include '../general_user/main.php';
                             while ($row = mysqli_fetch_assoc($s_query)) : ?>
                 <section class="d-flex justify-content-between align-items-center w-100 mb-2 border-bottom-uiu pb-2"
                     id="item">
-                    <p class="m-0"><span><?= $counter . "--" ?></span> <?= $row["name"] ?> </p>
-                    <p class="m-0"><?= $row["forum_name"] ?></p>
+                    <p class="m-0" style="font-size: 1.3em;"><span><?= $counter . "--" ?></span> <?= $row["name"] ?> </p>
+                    <p class="m-0" style="font-size: 1.3em;"><?= $row["forum_name"] ?></p>
                     <div>
                         <a href="discussion/approve.php?room_id=<?= $row["room_id"] ?>&user_id=<?= $row["users_id"] ?>"><i
-                                class="fa-solid fa-circle-check fa-xl"></i></a>
+                                class="fa-solid fa-circle-check fa-xl" style="font-size: 1.3em;"></i></a>
 
                         <a href="discussion/refuse.php?room_id=<?= $row["room_id"] ?>&user_id=<?= $row["users_id"] ?>"><i
-                                class="fa-solid fa-square-minus fa-xl"></i></a>
+                                class="fa-solid fa-square-minus fa-xl" style="font-size: 1.3em;"></i></a>
                     </div>
                 </section>
                 <?php $counter++; ?>

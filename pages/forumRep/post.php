@@ -23,6 +23,10 @@ include '../general_user/main.php';
         .card .p-1{
             margin-bottom: 100px !important;
         }
+
+        .shadow-desc {
+            background-color: aqua;
+        }
     </style>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
@@ -68,8 +72,8 @@ include '../general_user/main.php';
                                         <div class="shadow-desc">
                                             <div class="blog-meta">
 
-                                                <h4><a id="view" class="text-uppercase fw-bold" href="../general_user/view.php?id=<?php echo $post_row["id"]; ?>" title="<?php echo $post_row["title"]; ?>" target="_blank"><?php echo $post_row["title"]; ?></a></h4>
-                                                <small><a class="fw-bold" href="#" title="<?php echo $post_row["date"]; ?>"><?php echo $post_row["date"]; ?></a></small>
+                                                <h4 style="text-align: justify;"><a id="view" class="text-uppercase fw-bold" href="../general_user/view.php?id=<?php echo $post_row["id"]; ?>" title="<?php echo $post_row["title"]; ?>" target="_blank"><?php echo $post_row["title"]; ?></a></h4>
+                                                <small style="font-size: .8em;"><a class="fw-bold" href="#" title="<?php echo $post_row["date"]; ?>"><?php echo $post_row["date"]; ?></a></small>
                                                 <h4><a class="fw-bold" href="#" title="<?php echo $post_row["view"]; ?>"><?php echo "Viewed: {$post_row["view"]}"; ?></a></h4>
 
                                                 <span class="bg-aqua"><a class="fw-bold" href="">

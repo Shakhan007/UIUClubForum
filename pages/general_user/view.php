@@ -102,6 +102,7 @@ if (isset($_GET["id"])) {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="icon" href="../../assets/img/logo1.png">
+
         <style>
         body {
             font-family: "Dosis";
@@ -224,7 +225,7 @@ if (isset($_GET["id"])) {
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-title-area">
-                                <span class="color-green">
+                                <span class="color-green" style="font-size: 1.4em;">
                                     <?php
                                 $sql1 = "SELECT cat_name FROM categories WHERE id='{$row["cat_id"]}'";
                                 $result1 = mysqli_query($sql, $sql1);

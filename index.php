@@ -41,7 +41,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="singin.php"><i class="fa-solid fa-house-user"></i> Sing In</a>
+                            <a class="nav-link active" aria-current="page" href="singin.php"><i class="fa-solid fa-house-user"></i> Sign In</a>
                         </li>
                        
                         <!-- <li class="nav-item">

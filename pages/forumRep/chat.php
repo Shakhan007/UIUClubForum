@@ -18,17 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
-<?php
-$page = $_SERVER['PHP_SELF'];
-$sec = "5";
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- <meta charset="UTF-8"> -->
-    <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
+    
     <title>Chat</title>
     <!-- <link rel="icon" href="assets/img/favicon.png"> -->
     <link rel="stylesheet" href="../general_user/assets/css/chat.css">
@@ -56,7 +53,7 @@ $sec = "5";
         $check_row = mysqli_fetch_assoc($check_query);
         if($check_row["active"] == 0){
             echo "<script>alert('This room is not active anymore. You will be redirected to the home page.')</script>";
-            header("refresh:0.5; url=mainPage.php");
+           
         }
 
         else
@@ -74,9 +71,7 @@ $sec = "5";
                             <p class="text-center m-0"><?php echo "{$c_row["first_name"]} {$c_row["last_name"]}"; ?></p>
                             <?php if ($c_row["users_id"] == $_SESSION["id"]) : ?>
                                 <p class="d-flex justify-content-center align-items-center m-0">
-                                    <a <?php echo "href='delete/deleteMsg.php?sl_no={$c_row["sl_no"]}'"; ?>>
-                                        <i class="fa-regular fa-trash-can fa-xl p-1"></i>
-                                    </a>
+                                    
                                 </p>
                             <?php endif ?>
                             <p class="m-0"><?php echo "{$c_row["texts"]}"; ?></p>

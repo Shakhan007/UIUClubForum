@@ -9,7 +9,7 @@ include "pages/login/login.php";
     <meta charset="UTF-8">
     <title>UIU Club Fourm</title>
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="icon" href="assets/img/logo1.png">
 </head>
 
 <body>
